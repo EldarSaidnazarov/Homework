@@ -1,6 +1,6 @@
 # №1
 while True :
-    a = input('svetavor qaysi rangda: ').lower()
+    a = input('svetafor qaysi rangda: ').lower()
     if a=="qizil" or a=="sariq" or a=="yashil":
         print("rahmat, to’g’ri keladi")
         break
