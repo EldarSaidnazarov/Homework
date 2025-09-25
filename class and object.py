@@ -1,26 +1,26 @@
-# # class
-# class User:
-#     def __init__(self,ism,foydalanuvchi_ismi,parol , email):
-#         self.name = ism
-#         self.username = foydalanuvchi_ismi
-#         self.pochta = email
-#         self.parol = parol
-#         self.kurs = 3
-#     def get_name(self):
-#         print(self.name)
-#     def get_username(self):
-#         print(self.username)
-#     def get_password(self):
-#         print(self.parol)
-#     def update_kurs(self):
-#         self.kurs+=1
-#     def get_info(self):
-#         print(f"{self.name} {self.username} {self.parol} {self.pochta}, {self.kurs}-kurs")
-#
-# user1 = User("Eldar","GHOST","QWERTY","Eldar@mail.com")
-# user2 = User("Asror","Overlord","QWERT","Asror@mail.com")
-# user1.get_info()
-# user2.get_info()
+# class
+class User:
+    def __init__(self,ism,foydalanuvchi_ismi,parol , email):
+        self.name = ism
+        self.username = foydalanuvchi_ismi
+        self.pochta = email
+        self.parol = parol
+        self.kurs = 3
+    def get_name(self):
+        print(self.name)
+    def get_username(self):
+        print(self.username)
+    def get_password(self):
+        print(self.parol)
+    def update_kurs(self):
+        self.kurs+=1
+    def get_info(self):
+        print(f"{self.name} {self.username} {self.parol} {self.pochta}, {self.kurs}-kurs")
+
+user1 = User("Eldar","GHOST","QWERTY","Eldar@mail.com")
+user2 = User("Asror","Overlord","QWERT","Asror@mail.com")
+user1.get_info()
+user2.get_info()
 
 
 
@@ -37,7 +37,7 @@ class Avto:
     def get_info(self):
         return(f"Model: {self.model}, Rang: {self.rang}, "
         f"Korobka: {self.korobka}, Narh: {self.narh}$, "
-        f"Yil: {self.yil}, Yurgan: {self.kilometer} km")
+        f"Yil: {self.yil}, Probeg: {self.kilometer} km")
 
 
     def update_km(self,kilometer):
