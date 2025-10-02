@@ -3,17 +3,17 @@ with open('data/pi_million_digits.txt') as file:
     birthday = '12042005'
     find = pi.find(birthday)
     if find != -1:
-        print(f"Дата {birthday} найдена в числе π на позиции {find}")
+        print(f"Дата {birthday} найдена в числе pi на позиции {find}")
     else:
-        print(f"Дата {birthday} не найдена в числе π")
+        print(f"Дата {birthday} не найдена в числе pi")
 
 import pickle
 pi_float = float(pi[:100])
 with open('pi_float.pkl', 'wb') as f:
     pickle.dump(pi_float, f)
-    print("Число π сохранено в формате float с помощью pickle.")
+    print("Число pi сохранено в формате float с помощью pickle.")
 
 # Проверка: загрузи число из pickle и выведи
 with open('pi_float.pkl', 'rb') as f:
     loaded_pi = pickle.load(f)
-    print("Загруженное число π из файла:", loaded_pi)
+    print("Загруженное число pi из файла:", loaded_pi)
